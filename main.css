@@ -167,7 +167,68 @@ footer {
         overflow-x: hidden;
     }
 
+    #about .container {
+        display: block;
+        margin: 0;
+    }
+
+    #about .container img {
+        width: 90%;
+        margin-left: 4%;
+    }
+
+    #about .container h2, .container p {
+        margin-left: 4%;
+    }
+
+    #about .container .brandis-list img {
+        width: 20%;
+        margin-left: 3.5%;
+    }
+
+    #contact .container {
+        display: block;
+        margin: 0 0;
+
+    }
+
+    #contact .container h2, h3 {
+        display:block;
+        margin-left: 2%;
+    }
+
+    #contact .container .contact-methods {
+        display: block;
+    }
     
+    #contact .container, form input, form button, form textarea {
+        width: 80%;
+        margin-left: 2%;
+    }
+    
+    .adress {
+        margin: 0;
+    }
+
+    .adress ul {
+        margin-left: 4%;
+    }
+
+    .street p {
+        margin-left: 2%;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    .adress ul {
+        margin: 2%;
+    }
 
 }
 
