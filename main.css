@@ -166,6 +166,23 @@ footer {
     body {
         overflow-x: hidden;
     }
+    
+    header h1 {
+        display: block;
+        font-size: 180%;
+        margin-left: 4%;
+    }
+
+    header nav {
+        margin-right: 10%;
+    }
+
+    header nav ul li {
+    position: relative;
+    justify-content: none;
+    display: block;
+    font-size: 100%;
+    }
 
     #about .container {
         display: block;
@@ -233,7 +250,6 @@ footer {
 }
 
 @media (min-width: 701px) and (max-width: 1080px){
-
     * {
         margin: 0;
         padding: 0;
@@ -243,6 +259,83 @@ footer {
     body {
         overflow-x: hidden;
     }
-
     
+    header h1 {
+        font-size: 180%;
+        margin-left: 4%;
+    }
+
+    header nav {
+        margin-right: 7%;
+    }
+
+    header nav ul li {
+    position: relative;
+    justify-content: none;
+    font-size: 100%;
+    }
+
+    #about .container {
+        display: block;
+        margin: 0;
+    }
+
+    #about .container img {
+        width: 90%;
+        margin-left: 4%;
+    }
+
+    #about .container h2, .container p {
+        margin-left: 4%;
+    }
+
+    #about .container .brandis-list img {
+        width: 10%;
+        margin-left: 3.5%;
+    }
+
+    #contact .container {
+        display: block;
+        margin: 0 0;
+
+    }
+
+    #contact .container h2, h3 {
+        display:block;
+        margin-left: 2%;
+    }
+
+    #contact .container .contact-methods {
+        display: block;
+    }
+    
+    #contact .container, form input, form button, form textarea {
+        width: 80%;
+        margin-left: 2%;
+    }
+    
+    .adress {
+        margin: 0;
+    }
+
+    .adress ul {
+        margin-left: 4%;
+    }
+
+    .street p {
+        margin-left: 2%;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    .adress ul {
+        margin: 2%;
+    }
+
 }
