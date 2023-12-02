@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #192c61;
+    color: #ecf0f1;
+}
+
+header h1, section h2 {
+    font-weight: normal;
+}
+
+header, section h2, section h3, form button {
+    /*Para não ter que colocar nos botões vírgula header ul li, colocamos
+    só header que engloba tudo que esta dentro */
+    font-family: 'Bungee', sans-serif;
+    font-weight: normal;
+}
+
+header li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+}
+/*O color no botão só vai funcionar colocando também no a*/
+
+header li a {
+    display: inline;
+    margin-left: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+} 
+
+header li a:hover{
+    text-decoration: underline;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px; /*Ele só vai chegar a esse maximo em resoluções desse tamanho a*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, section .container {
+    /*Quando colocamos a vírgula, reaproveitamos o mesmo ajuste
+    para container para posicionar lado a lado*/
+    display: flex;
+    align-items: center; /*organizar na vertical*/
+    justify-content: space-between; /*Para ficarem um na direita e outro na esquerda*/
+}
+
+.brandis-list img {
+    height: 24px; /*Diminuindo os logos*/
+}
+
+.brandis-list li {
+    margin-right: 8px;
+    display: inline; /*Deixar um do lado do outro*/
+}
+
+section .container {
+    /*Uso de cascata, temos uma regra, usamos outra regra
+    subscrevendo a anterior.*/
+    /*Tivemos que reescrever a regra por causa do aling itens da section header
+    assim ele vai startar do começo da página*/
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0; /*espaçar os elementos*/
+    color:  #192c61;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 16px;
+}
+
+.store-front {
+    margin-right: 26px;
+    /*Aqui aplicou a margem nos logos também para resolver
+    criamos no html uma class dentro da img.
+    Então trocamos section img para a class que criamos*/
+    
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none; /*Textarea não manipulável tamanho*/
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #192c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #31457c; /*Efeito passar mouse botão*/
+}
+
+input:focus, textarea:focus {
+    outline-color: #192c61; /*Editar o contorno do click nos campos*/
+}
+
+footer {
+    background-color: #192c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+    text-align: center;
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    
+
+}
+
+@media (min-width: 701px) and (max-width: 1080px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    
+}
